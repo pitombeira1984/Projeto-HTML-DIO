@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto HTML DIO</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="inicio">Bem-vindo ao meu projeto HTML na DIO!</h1>
+        <hr>
+        <h2>Primeiros Passos com HTML</h2>
+        <nav>
+            <ul>
+                <li><a href="#section1">Introdução ao HTML</a></li>
+                <li><a href="#section2">Formulário em HTML</a></li>
+                <li><a href="#section3">Formatando e Estruturando HTML</a></li>
+                <li><a href="#section4">Imagens e Mídia c/ HTML</a></li>
+                <li><a href="#section5">Tabelas c/ HTML</a></li>
+                <li><a href="#section6">HTML Semântico</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <h2>Introdução ao HTML</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>HTML (HyperText Markup Language) é a linguagem de marcação padrão para criar páginas web. Ele estrutura o conteúdo e define como os elementos devem ser exibidos no navegador.</p>
+        </section>
+
+        <section id="section2">
+            <h2>Formulário em HTML</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="section3">
+            <h2>Formatando e Estruturando HTML</h2>
+            <p>Utilize tags como &lt;strong&gt;, &lt;em&gt;, &lt;h1&gt; a &lt;h6&gt; para formatar e estruturar seu conteúdo.</p>
+        </section>
+
+        <section id="section4">
+            <h2>Imagens e Mídia c/ HTML</h2>
+            <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+
+        <section id="section5">
+            <h2>Tabelas c/ HTML</h2>
+            <table summary="Cadastro" border="1" width="500" cellspacing="0" cellpadding="15" align="center">
+                <caption>Cadastro de Usuários</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Tebela Geral</th>
+                    </tr>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Senha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João Silva</td>
+                        <td>joaosilva@gmail.com</td>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <td>Tiago Pitombeira</td>
+                        <td>pitombeira@gmail.com</td>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Pitombeira</td>
+                        <td>danielpitombeira@gmail.com</td>
+                        <td>123456</td>
+                    </tr>
+                    <tr>
+                        <td>Waleska Pitombeira</td>
+                        <td>waleskapitombeira@gmail.com</td>
+                        <td>123456</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de Registros: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
