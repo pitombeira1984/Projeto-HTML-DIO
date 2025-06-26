@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto HTML DIO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -20,43 +21,79 @@
                 <li><a href="#section6">HTML Semântico</a></li>
             </ul>
         </nav>
+        <hr>
     </header>
     <main>
         <section id="section1">
             <h2>Introdução ao HTML</h2>
             <small><a href="#inicio">(Voltar)</a></small>
-            <p>HTML (HyperText Markup Language) é a linguagem de marcação padrão para criar páginas web. Ele estrutura o conteúdo e define como os elementos devem ser exibidos no navegador.</p>
+            <p>HTML (HyperText Markup Language) é a linguagem de marcação padrão para criar páginas web.</p>
+            <p>Ele estrutura o conteúdo e define como os elementos devem ser exibidos no navegador.</p>
         </section>
-
+        <hr>
         <section id="section2">
             <h2>Formulário em HTML</h2>
-            <form action="#" method="post">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <input type="submit" value="Enviar">
+            <small><a href="#inicio">(Voltar)</a></small>
+            <blockquote><strong>Um formulário HTML é uma seção de uma página web que permite aos usuários inserir e enviar dados para um servidor web.</strong></blockquote>
+            <p>Os formulários são usados para coletar informações dos usuários, como nome, email, senha, etc.</p>
+            <p>Os elementos de formulário incluem campos de texto, botões, caixas de seleção, botões de opção, listas suspensas e muito mais.</p>
+            <p>Os formulários são essenciais para interações dinâmicas em sites, como cadastro, login, comentários e pesquisas.</p>
+            <p>Para criar um formulário, usamos a tag &lt;form&gt; e dentro dela, adicionamos os elementos de entrada necessários.</p>
+            <h3>Exemplo de Formulário</h3>
+            <h4>Bem Vindo ao Formulário</h4>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Campo obrigatório">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Campo obrigatório">
+                </fieldset>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                
+                <button type="submit">Submit</button>
             </form>
         </section>
-
+        <hr>
         <section id="section3">
             <h2>Formatando e Estruturando HTML</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p><strong>HTML permite formatar e estruturar o conteúdo de uma página web usando tags.</strong></p>
+            <p>As tags são usadas para definir elementos como títulos, parágrafos, listas, links, imagens e muito mais.</p>
+            <p>As tags HTML são compostas por uma abertura e um fechamento, como &lt;tag&gt; e &lt;/tag&gt;.</p>
+            <p>Algumas tags são auto-fechadas, como &lt;br&gt; e &lt;img&gt;, que não requerem uma tag de fechamento.</p>
+            <p>As tags HTML podem ter atributos que fornecem informações adicionais sobre o elemento, como id, class, style, etc.</p>
+            <p>A tag &lt;div&gt; em HTML é usada para definir uma divisão ou seção em um documento HTML.</p>
             <p>Utilize tags como &lt;strong&gt;, &lt;em&gt;, &lt;h1&gt; a &lt;h6&gt; para formatar e estruturar seu conteúdo.</p>
         </section>
-
+        <hr>
         <section id="section4">
             <h2>Imagens e Mídia c/ HTML</h2>
-            <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>Para colocar uma única imagem em uma página da web, usamos o elemento <img> . <br> Isso é um elemento vazio (quer dizer que não possui conteúdo de texto ou tag de fechamento) que requer no mínimo um atributo para ser útil — src (às vezes pronunciado como seu título completo, source).</p>
+            <p>O atributo src especifica o caminho para a imagem que queremos exibir. <br> O atributo alt fornece uma descrição alternativa da imagem, que é importante para acessibilidade e SEO.</p>
+            <p>Para adicionar vídeos, usamos o elemento &lt;video&gt; com o atributo controls para permitir que os usuários reproduzam, pausem e ajustem o volume do vídeo.</p>
+            <p>O elemento &lt;video&gt; pode conter múltiplas fontes de vídeo usando a tag &lt;source&gt;, permitindo que o navegador escolha o formato mais adequado.</p>
+            <p><strong>Exemplo de uso de imagens e vídeos:</strong></p>
+            <img src="img-front-end.jpg" alt="Imagem de exemplo" width="300" height="200">
             <video controls>
                 <source src="video.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </section>
-
+        <hr>
         <section id="section5">
             <h2>Tabelas c/ HTML</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>As tabelas HTML são usadas para mostrar dados tabulares com linhas e colunas. <br> A decisão de usar um &lt;table&gt; precisa ser baseada no conteúdo que você está apresentando e nas necessidades dos usuários em relação a esse conteúdo.</p>
+            <p>Uma tabela HTML é composta por várias tags, incluindo &lt;table&gt;, &lt;tr&gt; (linha), &lt;th&gt; (cabeçalho) e &lt;td&gt; (célula de dados).</p>
+            <p>As tabelas podem ser usadas para exibir informações como listas de produtos, resultados de pesquisas, dados financeiros e muito mais.</p>
+            <p>As tabelas podem ser estilizadas usando CSS para melhorar a aparência e a legibilidade.</p>
+            <h3>Exemplo de tabela:</h3>
             <table summary="Cadastro" border="1" width="500" cellspacing="0" cellpadding="15" align="center">
                 <caption>Cadastro de Usuários</caption>
                 <thead>
@@ -97,7 +134,23 @@
                     </tr>
                 </tfoot>
             </table>
-        </div>
+        </section>
+        <hr>
+        <section id="section6">
+            <h2>HTML Semântico</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>HTML semântico é uma abordagem que utiliza tags HTML para descrever o significado do conteúdo, melhorando a acessibilidade e a SEO.</p>
+            <p>Tags semânticas incluem &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;footer&gt;, entre outras.</p>
+            <p>O uso de HTML semântico ajuda os mecanismos de busca a entenderem melhor o conteúdo da página, melhorando a indexação e a visibilidade nos resultados de pesquisa.</p>
+            <p>Além disso, melhora a acessibilidade para usuários com deficiências, pois leitores de tela podem interpretar melhor o conteúdo semântico.</p>
+            <p><strong>Exemplo de uso de HTML semântico:</strong></p>
+            <img src="./img-html-semantico.jpg" alt="ilustração de html semantico" width="300" height="200">
+        </section>
     </main>
+    <footer>
+        <hr>
+        <p>Desenvolvido por Tiago Pitombeira</p>
+        <p>Data: 26/06/2025</p>
+    </footer>
 </body>
 </html>
